@@ -1,4 +1,4 @@
-import smartflix from "../assets/SmartCodeFixer.png";
+import smartflix from "../assets/SmartcodeFixer.png";
 import eventaura from "../assets/eventAura.jpeg";
 import textSummarizer from "../assets/TextSummarizer.png";
 import bloodDonation from "../assets/BloodDonation.png";
