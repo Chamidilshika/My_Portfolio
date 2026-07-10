@@ -60,7 +60,7 @@ const About = () => {
                 </li>
 
                 <li>
-                  <strong>Focus:</strong> Full-Stack Development 
+                  <strong>Focus:</strong> Full-Stack Development, ML/DL/AI Projects
                 </li>
 
                 <li>
@@ -68,7 +68,7 @@ const About = () => {
                 </li>
 
                 <li>
-                  <strong>Goal:</strong> Software Engineer, AI/ML Enginner 
+                  <strong>Goal:</strong> Software Engineer, AI/ML Engineer 
                 </li>
               </ul>
             </div>

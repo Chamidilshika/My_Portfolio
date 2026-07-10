@@ -1,77 +1,140 @@
-import { useEffect, useState } from "react";
-import API from "../services/api";
+import smartflix from "../assets/SmartCodeFixer.png";
+import eventaura from "../assets/eventAura.jpeg";
+import textSummarizer from "../assets/TextSummarizer.png";
+import bloodDonation from "../assets/BloodDonation.png";
+import fashionRecommender from "../assets/FashionRecommender.png"
+import healthcare from "../assets/Healthcare.png";
+
+const projects = [
+ 
+  {
+    id: 1,
+    title: "EventAura",
+    image: eventaura,
+    description:
+      "Event management platform for ticket booking and host management.",
+    tech: "Laravel, Inertia.js, MySQL, React, PHP, JavaScript, SCSS",
+    github: "https://lnkd.in/ga84N99e",
+    live: "https://huggingface.co/spaces/Chamidilshika/EventAura",
+  },
+  {
+    id: 2,
+    title: "SmartFlix",
+    image: smartflix,
+    description:
+      "Movie recommendation system using collaborative and content-based filtering.",
+    tech: "Python, Flask, Machine Learning, HTML, CSS, JavaScript",
+    github: "https://github.com/Chamidilshika/SmartCodeFixer",
+    live: "https://smart-code-fixer.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Blood Donation Platform",
+    image: bloodDonation,
+    description:
+      "Community blood donation platform with request management.",
+    tech: "MongoDB, Express.js, React.js, Node.js, React Native, AI",
+    github: "https://github.com/ImalshaSathsarani/RedAlert",
+    live: "https://red-alert-zeta.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "AI Text Summarization Web App",
+    image: textSummarizer,
+    description:
+      "Converts lengthy text into accurate, meaningful summaries.",
+    tech: "Python, Flask, Hugging Face Transformers, PyTorch, NLP, HTML, CSS",
+    github: "https://github.com/Chamidilshika/Text-Summarization-Webapp.git",
+    live: "https://huggingface.co/spaces/Chamidilshika/Text_Summarization_Webapp",
+  },
+  {
+    id: 5,
+    title: "Fashion Image Recommender System",
+    image: fashionRecommender,
+    description:
+      "Suggests visually similar clothing items based on uploaded images.",
+    tech: "Python, Flask, Hugging Face Transformers, PyTorch, HTML, CSS",
+    github: "https://github.com/Chamidilshika/fashion_recommender.git",
+    live: "https://huggingface.co/spaces/Chamidilshika/fashion-recommender",
+  },
+
+  {
+  id: 6,
+  title: "Healthcare Appointment Management System",
+  image: healthcare,
+  description:
+    "A MERN stack healthcare platform connecting patients, doctors, and administrators with secure appointment booking and management.",
+  tech: "MongoDB, Express.js, React.js, Node.js, JWT, Tailwind CSS, Twilio, Nodemailer",
+  github: "https://github.com/Chamidilshika/Healthcare-Appointment-System",
+  live: "https://healthcare-appointment-system-tpop.vercel.app/",
+},
+];
 
 const FeaturedProjects = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    API.get("/projects").then((res) => setProjects(res.data));
-  }, []);
-
   return (
-    <section className="bg-white text-white py-24 px-6">
-
+    <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
 
-        <h2 className="text-4xl text-black font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold text-center text-gray-900 mb-14">
           Featured Projects
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {projects.map((p) => (
+          {projects.map((project) => (
             <div
-              key={p._id}
-              className="bg-[#102A54] border border-blue-900 p-5 rounded-xl shadow-lg hover:scale-105 transition duration-300"
+              key={project.id}
+              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border"
             >
+              {/* Project Image */}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-56 object-cover"
+              />
 
-              {/* Title */}
-              <h3 className="text-xl font-bold mb-2">
-                {p.title}
-              </h3>
+              {/* Content */}
+              <div className="p-6">
 
-              {/* Description */}
-              <p className="text-gray-300 text-sm mb-3">
-                {p.description}
-              </p>
+                <h3 className="text-xl font-bold text-gray-900">
+                  {project.title}
+                </h3>
 
-              {/* Tech */}
-              <p className="text-xs text-blue-300 mb-4">
-                {p.tech}
-              </p>
+                <p className="text-gray-600 mt-3 text-sm leading-6">
+                  {project.description}
+                </p>
 
-              {/* Buttons */}
-              <div className="flex gap-3 mt-auto">
+                <p className="mt-4 text-sm font-semibold text-blue-600">
+                  {project.tech}
+                </p>
 
-                {/* GitHub */}
-                {p.github && (
+                <div className="flex gap-3 mt-6">
+
                   <a
-                    href={p.github}
+                    href={project.github}
                     target="_blank"
-                    className="px-3 py-1 text-sm border border-gray-400 rounded hover:bg-gray-700 transition"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition"
                   >
-                    GitHub Link
+                    GitHub
                   </a>
-                )}
 
-                {/* Live Link */}
-                {p.live && (
                   <a
-                    href={p.live}
+                    href={project.live}
                     target="_blank"
-                    className="px-3 py-1 text-sm bg-blue-500 rounded hover:bg-blue-600 transition"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
                   >
-                    Live Link
+                    Live Demo
                   </a>
-                )}
+
+                </div>
 
               </div>
-
             </div>
           ))}
 
         </div>
-  
 
       </div>
     </section>

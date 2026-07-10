@@ -20,15 +20,8 @@ const Hero = () => {
           </p>
 
           <p className="mt-2 text-gray-500">
-            Full Stack Developer | DevOps Enthusiast | AI Solutions
+            Software Engineer | Full Stack Developer | DevOps Enthusiast | AI Solutions
           </p>
-
-          {/* OPTIONAL BUTTONS (professional touch) */}
-          <div className="mt-6 flex gap-4 justify-center md:justify-start">
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-              View CV
-            </button>
-          </div>
 
         </div>
 

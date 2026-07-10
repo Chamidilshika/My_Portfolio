@@ -5,6 +5,8 @@ import FeaturedProjects from "../sections/FeaturedProjects";
 import Footer from "../components/Footer";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
+import Certifications from "../sections/Certifications";
+import Achievements from "../sections/Achievements";
 
 const Home = () => {
   return (
@@ -23,6 +25,14 @@ const Home = () => {
         <FeaturedProjects />
       </section>
 
+      <section id="certifications">
+        <Certifications />
+      </section>
+
+      <section id="achievemnets">
+        <Achievements />
+      </section>
+
       <section id="about">
         <About />
       </section>
@@ -36,4 +46,4 @@ const Home = () => {
   );
 };
 
-export default Home;  // ✅ THIS IS REQUIRED
+export default Home;  

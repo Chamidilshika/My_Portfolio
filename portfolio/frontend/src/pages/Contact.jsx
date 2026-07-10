@@ -115,7 +115,7 @@ const Contact = () => {
               📧 Email: chamidilshika7@gmail.com
             </p>
             <p className="mb-2">
-              📞 Phone: +94 779769050 / 0787614931
+              📞 Phone: +94 779769050 / +94 787614931
             </p>
             <p>
               📍 Location: Nugegoda, Sri Lanka
@@ -175,6 +175,24 @@ const Contact = () => {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
                 <span>LinkedIn</span>
+              </a>
+
+              <a 
+                href="https://github.com/Chamidilshika"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-2 group text-base hover:text-blue-400 transition cursor-pointer"
+              >
+                {/* GitHub SVG Icon */}
+                <svg 
+                  className="w-8 h-8 text-gray-300 group-hover:text-blue-400 transition" 
+                  viewBox="0 0 24 24" 
+                  fill="currentColor"
+                >
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.96.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.31-1.7-1.31-1.7-1.07-.73.08-.72.08-.72 1.18.08 1.8 1.21 1.8 1.21 1.05 1.79 2.75 1.27 3.42.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.84 1.2 3.1 0 4.42-2.69 5.39-5.25 5.68.42.36.8 1.08.8 2.18v3.23c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+
+                <span>GitHub</span>
               </a>
             </div>
           </div>

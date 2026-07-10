@@ -11,8 +11,7 @@ const Footer = () => {
           </h2>
 
           <p className="mt-3 text-sm text-gray-600">
-            Full Stack Developer passionate about building modern web applications
-            using React, Node.js, and MongoDB.
+            Full Stack Developer passionate about building modern web applications using React, Node.js, and MongoDB. Interested in creating scalable solutions, exploring AI-driven technologies, improving user experiences, and continuously learning new tools and frameworks.
           </p>
         </div>
 
