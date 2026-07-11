@@ -1,4 +1,4 @@
-import smartflix from "../assets/SmartcodeFixer.png";
+import smartCodeFixer from "../assets/SmartcodeFixer.png";
 import eventaura from "../assets/eventAura.jpeg";
 import textSummarizer from "../assets/TextSummarizer.png";
 import bloodDonation from "../assets/BloodDonation.png";
@@ -19,10 +19,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "SmartFlix",
-    image: smartflix,
+    title: "SmartCodeFixer",
+    image: smartCodeFixer,
     description:
-      "Movie recommendation system using collaborative and content-based filtering.",
+      "An AI-powered code analysis platform that automatically detects programming errors and provides intelligent fix suggestions.",
     tech: "Python, Flask, Machine Learning, HTML, CSS, JavaScript",
     github: "https://github.com/Chamidilshika/SmartCodeFixer",
     live: "https://smart-code-fixer.vercel.app/",
