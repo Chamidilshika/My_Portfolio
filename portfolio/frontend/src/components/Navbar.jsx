@@ -9,11 +9,23 @@ const Navbar = () => {
         </h2>
 
         {/* Links */}
-        <ul className="flex gap-8 text-xl text-black font-medium">
+        <ul className="flex gap-8 text-lg text-black font-medium">
 
           <li>
             <a href="#home" className="hover:text-blue-600 transition">
               Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#education" className="hover:text-blue-600 transition">
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects" className="hover:text-blue-600 transition">
+              Projects
             </a>
           </li>
 
@@ -24,8 +36,14 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a href="#projects" className="hover:text-blue-600 transition">
-              Projects
+            <a href="#certifications" className="hover:text-blue-600 transition">
+              Certifications
+            </a>
+          </li>
+
+          <li>
+            <a href="#achievements" className="hover:text-blue-600 transition">
+              Achievements
             </a>
           </li>
 

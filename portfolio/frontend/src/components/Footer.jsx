@@ -30,6 +30,12 @@ const Footer = () => {
             </li>
 
             <li>
+              <a href="#education" className="hover:text-blue-600 cursor-pointer">
+                Education
+              </a>
+            </li>
+
+            <li>
               <a href="#projects" className="hover:text-blue-600 cursor-pointer">
                 Projects
               </a>
@@ -38,6 +44,18 @@ const Footer = () => {
             <li>
               <a href="#skills" className="hover:text-blue-600 cursor-pointer">
                 Skills
+              </a>
+            </li>
+
+            <li>
+              <a href="#certifications" className="hover:text-blue-600 cursor-pointer">
+                Certifications
+              </a>
+            </li>
+
+            <li>
+              <a href="#achievements" className="hover:text-blue-600 cursor-pointer">
+                Achievements
               </a>
             </li>
 

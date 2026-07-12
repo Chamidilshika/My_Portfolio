@@ -7,6 +7,7 @@ import Contact from "../pages/Contact";
 import About from "../pages/About";
 import Certifications from "../sections/Certifications";
 import Achievements from "../sections/Achievements";
+import Education from "../sections/Education";
 
 const Home = () => {
   return (
@@ -17,19 +18,23 @@ const Home = () => {
         <Hero />
       </section>
 
-      <section id="skills">
-        <Skills />
+      <section id="education">
+        <Education />
       </section>
 
       <section id="projects">
         <FeaturedProjects />
       </section>
 
+      <section id="skills">
+        <Skills />
+      </section>
+
       <section id="certifications">
         <Certifications />
       </section>
 
-      <section id="achievemnets">
+      <section id="achievements">
         <Achievements />
       </section>
 
